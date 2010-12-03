@@ -37,7 +37,7 @@ try: # try to catch any missing dependancies
 
     del PKGNAME
 except ImportError as e: # We are missing something, let them know...
-    sys.stderr.write("You might not have the "+PKGNAME+" module, try 'easy_install "+PKGNAME+"', else consult google.\n"+str(e))
+    sys.stderr.write("You might not have the "+PKGNAME+" module, try 'easy_install "+PKGNAME+"', else consult google.\n"+str(e)+"\n")
     sys.exit(-1)
 
 ###  Static Variables  ###
